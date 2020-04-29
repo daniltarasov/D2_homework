@@ -5,7 +5,7 @@ from bottle import Bottle, HTTPResponse
 from sentry_sdk.integrations.bottle import BottleIntegration
 from sentry_sdk.integrations.logging import LoggingIntegration, ignore_logger
 
-# Получаем адрес из переменной окружения (прописана в хероку), а если её нет, то из файла env.py
+# Получаем адрес из переменной окружения (должна быть прописана в хероку), а если её нет, то из файла env.py
 SENTRY_DSN = os.environ.get("SENTRY_DSN")
 if not SENTRY_DSN:
     from env import SENTRY_DSN
