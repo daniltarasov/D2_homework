@@ -1,0 +1,1 @@
+SENTRY_DSN = "https://11eb307156744da8bda7df13c8927d34@o383803.ingest.sentry.io/5214222"
